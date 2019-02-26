@@ -1,4 +1,4 @@
-FROM microsoft/windowsservercore:10.0.14393.1715
+FROM mcr.microsoft.com/windows/servercore:ltsc2019
 SHELL ["powershell"]
 
 RUN Invoke-WebRequest "https://aka.ms/vs/15/release/vs_community.exe" -OutFile "$env:TEMP\vs_community.exe" -UseBasicParsing
